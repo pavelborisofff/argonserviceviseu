@@ -1,4 +1,4 @@
-const form = document.getElementById('connection');
+const form = document.getElementById('connection__form');
 const popup = document.querySelector('.popup');
 const btnClosePopup = document.querySelector('.popup__close-button');
 
@@ -11,7 +11,8 @@ function closePopup() {
 }
 
 form.addEventListener('submit', (evt) => {
-	evt.preventDefault();
+	console.log('submit');
+	// evt.preventDefault();
 
 	const name = document.querySelector('.connection__form1').value;
 	const phone = document.querySelector('.connection__form2').value;
